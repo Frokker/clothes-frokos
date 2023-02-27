@@ -1,10 +1,8 @@
-import 'package:clothes_app/pages/homepage.dart';
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:lottie/lottie.dart';
 
 class WelcomePage extends StatefulWidget {
-  static String get routeName => '@routes/welcome-page';
   @override
   State<WelcomePage> createState() => _WelcomePageState();
 }
@@ -175,8 +173,7 @@ class _WelcomePageState extends State<WelcomePage> {
                       ),
                     ),
                     InkWell(
-                      onTap: () =>
-                          Navigator.of(context).pushNamed(HomePage.routeName),
+                      onTap: () => Navigator.of(context).pushNamed('home'),
                       child: Container(
                         alignment: Alignment.center,
                         height: 50,
